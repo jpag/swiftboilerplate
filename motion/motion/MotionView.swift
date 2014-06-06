@@ -9,13 +9,16 @@
 import UIKit
 
 class MotionView: UIView {
-
+    
+    // this calls the sub class that will let you return a single instance of the model
+    var moModel:MotionModel = MotionModel.singleton()
+    
     init(frame: CGRect) {
         super.init(frame: frame)
         // Initialization code
         
         // this BLUE is actually an extension in the extension.swift file.
-        self.backgroundColor = UIColor.moBlueColor(0.5)
+        self.backgroundColor = UIColor.moWhiteCool(alpha: 1.0)
         self.autoresizingMask = UIViewAutoresizing.FlexibleWidth
         
 

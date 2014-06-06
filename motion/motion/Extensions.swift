@@ -9,15 +9,23 @@
 import UIKit
 
 
-// Custom Colors
+// Example of extending UIColor with Custom Colors
 extension UIColor {
     
-    class func moBlueColor(_ a:CGFloat = 1) -> UIColor {
-        return UIColor(red: 0.25, green: 0.5, blue: 0.85, alpha: a)
+    class func moBlueColor(alpha:CGFloat = 1.0) -> UIColor {
+        return UIColor(red: 0.25, green: 0.5, blue: 0.85, alpha: alpha)
     }
     
-    class func moPinkColor(_ a:CGFloat = 1) -> UIColor {
-        return UIColor(red: 0.93, green: 0.0, blue: 0.33, alpha: a)
+    class func moPinkColor(alpha:CGFloat = 1.0) -> UIColor {
+        return UIColor(red: 0.93, green: 0.0, blue: 0.33, alpha: alpha)
+    }
+    
+    class func moWhiteWarm(alpha:CGFloat = 1.0) -> UIColor {
+        return UIColor(red: 0.95, green: 0.94, blue: 0.93, alpha: alpha)
+    }
+    
+    class func moWhiteCool(alpha:CGFloat = 1.0) -> UIColor {
+        return UIColor(red: 0.94, green: 0.95, blue: 0.96, alpha: alpha)
     }
 }
 
